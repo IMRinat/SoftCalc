@@ -1,0 +1,11 @@
+﻿<Window x:Class="SoftCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="139,124,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.342,0.539" Click="Button_Click_1"/>
+        <TextBox x:Name="query" HorizontalAlignment="Left" Height="23" Margin="96,48,0,0" TextWrapping="Wrap" Text="60/-2" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="result" HorizontalAlignment="Left" Height="23" Margin="96,84,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

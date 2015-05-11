@@ -1,0 +1,15 @@
+c:\users\home\documents\visual studio 2012\Projects\SoftCalc\SoftCalc\bin\Debug\SoftCalc.exe.config
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\bin\Debug\SoftCalc.exe
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\bin\Debug\SoftCalc.pdb
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\obj\Debug\SoftCalc.csprojResolveAssemblyReference.cache
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\obj\Debug\MainWindow.baml
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\obj\Debug\MainWindow.g.cs
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\obj\Debug\App.g.cs
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\obj\Debug\SoftCalc_MarkupCompile.cache
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\obj\Debug\SoftCalc.g.resources
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\obj\Debug\SoftCalc.Properties.Resources.resources
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\obj\Debug\SoftCalc.csproj.GenerateResource.Cache
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\obj\Debug\SoftCalc.exe
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\obj\Debug\SoftCalc.pdb
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\bin\Debug\CalcCore.dll
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\SoftCalc\bin\Debug\CalcCore.pdb

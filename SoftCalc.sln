@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftCalc", "SoftCalc\SoftCalc.csproj", "{33955C02-4A8F-4370-A016-AA8A71BA2F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcCore", "CalcCore\CalcCore.csproj", "{044DA8DC-12A3-4E02-ABB2-09AC8D4A3629}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shamrinat.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CalcCore\\CalcCore.csproj
+		SccProjectName1 = CalcCore
+		SccLocalPath1 = CalcCore
+		SccProjectUniqueName2 = SoftCalc\\SoftCalc.csproj
+		SccProjectName2 = SoftCalc
+		SccLocalPath2 = SoftCalc
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33955C02-4A8F-4370-A016-AA8A71BA2F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33955C02-4A8F-4370-A016-AA8A71BA2F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33955C02-4A8F-4370-A016-AA8A71BA2F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33955C02-4A8F-4370-A016-AA8A71BA2F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{044DA8DC-12A3-4E02-ABB2-09AC8D4A3629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044DA8DC-12A3-4E02-ABB2-09AC8D4A3629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044DA8DC-12A3-4E02-ABB2-09AC8D4A3629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044DA8DC-12A3-4E02-ABB2-09AC8D4A3629}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

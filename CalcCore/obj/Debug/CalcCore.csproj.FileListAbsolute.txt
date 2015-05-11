@@ -1,0 +1,5 @@
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\CalcCore\obj\Debug\CalcCore.csprojResolveAssemblyReference.cache
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\CalcCore\bin\Debug\CalcCore.dll
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\CalcCore\bin\Debug\CalcCore.pdb
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\CalcCore\obj\Debug\CalcCore.dll
+c:\Users\Home\Documents\Visual Studio 2012\Projects\SoftCalc\CalcCore\obj\Debug\CalcCore.pdb
