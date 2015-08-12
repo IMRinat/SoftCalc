@@ -35,18 +35,18 @@
             this.button2 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -77,7 +77,7 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(71, 90);
+            this.panel1.Location = new System.Drawing.Point(123, 93);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(339, 134);
             this.panel1.TabIndex = 2;
@@ -105,35 +105,6 @@
             this.panel2.Size = new System.Drawing.Size(745, 290);
             this.panel2.TabIndex = 3;
             // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(0, 59);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(62, 207);
-            this.panel3.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(71, 59);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(280, 207);
-            this.panel4.TabIndex = 1;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(357, 59);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(281, 207);
-            this.panel5.TabIndex = 2;
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(644, 59);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(98, 207);
-            this.panel6.TabIndex = 3;
-            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.panel9);
@@ -143,14 +114,6 @@
             this.panel7.Size = new System.Drawing.Size(739, 50);
             this.panel7.TabIndex = 4;
             // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.groupBox1);
-            this.panel8.Location = new System.Drawing.Point(3, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(273, 44);
-            this.panel8.TabIndex = 0;
-            // 
             // panel9
             // 
             this.panel9.Controls.Add(this.textBox1);
@@ -158,6 +121,14 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(454, 44);
             this.panel9.TabIndex = 1;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.groupBox1);
+            this.panel8.Location = new System.Drawing.Point(3, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(273, 44);
+            this.panel8.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -167,6 +138,35 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(644, 59);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(98, 207);
+            this.panel6.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(357, 59);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(281, 207);
+            this.panel5.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(71, 59);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(280, 207);
+            this.panel4.TabIndex = 1;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(0, 59);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(62, 207);
+            this.panel3.TabIndex = 0;
             // 
             // Form1
             // 
@@ -184,9 +184,9 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panel8.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
