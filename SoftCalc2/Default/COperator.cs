@@ -10,7 +10,7 @@ namespace SoftCalc2.Default
 		{
 			OperatorText = name;
             OperatorPriority = priority;
-			OperatorType = opertyp;
+			OperatorType  =  opertyp;
 			CalcOperator = calcOper;
 		}
 
