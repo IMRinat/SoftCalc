@@ -35,14 +35,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -51,23 +51,22 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(195, 3);
+            this.textBox1.Location = new System.Drawing.Point(186, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(256, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "60/-2";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(45, 12);
+            this.textBox2.Location = new System.Drawing.Point(57, 188);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(167, 10);
+            this.button1.Location = new System.Drawing.Point(57, 214);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -77,15 +76,16 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(123, 93);
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Location = new System.Drawing.Point(390, 188);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(339, 134);
+            this.panel1.Size = new System.Drawing.Size(361, 169);
             this.panel1.TabIndex = 2;
             // 
             // button2
             // 
             this.button2.CausesValidation = false;
-            this.button2.Location = new System.Drawing.Point(258, 12);
+            this.button2.Location = new System.Drawing.Point(57, 243);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 0;
@@ -95,15 +95,22 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(12, 309);
+            this.panel2.Location = new System.Drawing.Point(12, 363);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(745, 290);
+            this.panel2.Size = new System.Drawing.Size(745, 141);
             this.panel2.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(576, 59);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(62, 70);
+            this.panel3.TabIndex = 0;
             // 
             // panel7
             // 
@@ -124,55 +131,46 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.groupBox1);
+            this.panel8.Controls.Add(this.comboBox1);
             this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(273, 44);
             this.panel8.TabIndex = 0;
             // 
-            // groupBox1
+            // comboBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 27);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 3);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 0;
             // 
             // panel6
             // 
             this.panel6.Location = new System.Drawing.Point(644, 59);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(98, 207);
+            this.panel6.Size = new System.Drawing.Size(98, 70);
             this.panel6.TabIndex = 3;
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(357, 59);
+            this.panel5.Location = new System.Drawing.Point(292, 59);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(281, 207);
+            this.panel5.Size = new System.Drawing.Size(281, 70);
             this.panel5.TabIndex = 2;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(71, 59);
+            this.panel4.Location = new System.Drawing.Point(6, 59);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(280, 207);
+            this.panel4.Size = new System.Drawing.Size(280, 70);
             this.panel4.TabIndex = 1;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(0, 59);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(62, 207);
-            this.panel3.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 611);
+            this.ClientSize = new System.Drawing.Size(780, 516);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
@@ -180,8 +178,6 @@
             this.Controls.Add(this.textBox2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -207,8 +203,8 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

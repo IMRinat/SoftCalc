@@ -21,29 +21,12 @@ namespace formcalctest1
             //textBox2.Text = act.Calc("10.001", 2);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            CalcButtonRender.RenderWinForm(panel1, textBox1);
-        }
-
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-        }
-
+      
         private void button2_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
     }
 }
