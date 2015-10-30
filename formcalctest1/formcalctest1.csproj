@@ -82,6 +82,10 @@
       <Project>{9bceeee4-dff0-4c56-8264-539169678d7f}</Project>
       <Name>ButtonGeneration</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ClassFormCalcBind\ClassFormCalcBind.csproj">
+      <Project>{33e3cb56-8079-4db7-b8eb-051f819c8310}</Project>
+      <Name>ClassFormCalcBind</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SoftCalc2\SoftCalc2.csproj">
       <Project>{ad405b90-8ca7-472f-927b-a33eb81f1b55}</Project>
       <Name>SoftCalc2</Name>

@@ -1,69 +1,82 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace ButtonGeneration
 {
+    public class BorderButtonCoord
+    {
+        public int W, H, B, T, L; //width,height,border,top,left
+        public int Row = 0;
+        public int Col = 0;
+
+        public BorderButtonCoord(int w1, int h1, int b1) // 40 20 3
+        {
+            W = w1;
+            H = h1;
+            B = b1;
+        }
+
+        public void Inc(EnumCalcButtonType typ)
+        {
+            if (typ == EnumCalcButtonType.Empty)
+            {
+                Col++;
+            }
+            else if (typ == EnumCalcButtonType.NextRow)
+            {
+                Row++;
+                Col = 0;
+            }
+            else
+            {
+                L = Col*(W + B);
+                T = Row*(H + B);
+                Col++;
+            }
+        }
+    }
+
     public static class CalcButtonRender
     {
 
-        private static TextBox _statTextBox;
-        private static IList<CalcButton> _calcButtonList;
+        //private static IList<CalcButton> _calcButtonList;
 
 
         private static void button1_Click(object sender, EventArgs e)
         {
-            var tmpButton = _calcButtonList.FirstOrDefault(button => button.Label == ((Button)sender).Text);
+            /*var tmpButton = _calcButtonList.FirstOrDefault(button => button.Label == ((Button)sender).Text);
 
             if (tmpButton != null)
             {
-                _statTextBox.Text = _statTextBox.Text + tmpButton.TextForEdit;
+             //   _statTextBox.Text = _statTextBox.Text + tmpButton.TextForEdit;
             }
+            */
         }
 
 
 
-        public static void RenderWinForm(Panel panel, TextBox textBox)
+        public static void RenderWinForm(Panel panel,IList<CalcButton> calcButtonList)
         {
-            _calcButtonList = CalcButtonList.GetCalcButtonist();
-            _statTextBox = textBox;
+            var coord = new BorderButtonCoord(40, 20, 3);
 
-            var row = 0;
-            var col = 0;
-            var index = 0;
-            const int w = 40; //width
-            const int h = 20; //height
-            const int b = 3; // border
-            foreach (var calcButton in _calcButtonList)
+            foreach (var calcButton in calcButtonList)
             {
-                index++;
-                if (calcButton.ButtonType == EnumCalcButtonType.Empty)
+                if (((calcButton.ButtonType != EnumCalcButtonType.Empty))&&(calcButton.ButtonType != EnumCalcButtonType.NextRow))
                 {
-                    col++;
-                }
-                if (calcButton.ButtonType == EnumCalcButtonType.NextRow)
-                {
-                    row++;
-                    col = 0;
-                }
-                if (calcButton.ButtonType == EnumCalcButtonType.Calc)
-                {
-                    var newbutton = new Button();
-
-                    panel.Controls.Add(newbutton);
-
-                    newbutton.Location = new System.Drawing.Point (col*(w+b),row*(h+b));
-                    newbutton.Name = "buttonCalc" + index.ToString(CultureInfo.InvariantCulture);
-                    newbutton.Size = new System.Drawing.Size(w, h);
-                    newbutton.TabIndex = 0;
-                    newbutton.Text = calcButton.Label;
-                    newbutton.UseVisualStyleBackColor = true;
+                    var newbutton = new Button
+                        {
+                            Location = new System.Drawing.Point(coord.L, coord.T),
+                            Size = new System.Drawing.Size(coord.W, coord.H),
+                            Name = calcButton.ID,
+                            Text = calcButton.Label,
+                            UseVisualStyleBackColor = true
+                        };
                     newbutton.Click += button1_Click;
-
-                    col++;
+                    panel.Controls.Add(newbutton);
                 }
+                coord.Inc(calcButton.ButtonType);
             }
         }
     }
